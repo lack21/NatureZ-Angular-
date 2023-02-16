@@ -1,0 +1,59 @@
+<!-- lear -->
+<!-- Global Content -->
+
+<!-- Main Content -->
+<main class="main" (mouseover)="ShowNavigation()">
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <img src="../assets/images/logo.png" alt="logo" class="logo" />
+
+    <ul class="nav-links">
+      <fa-icon
+        [icon]="timesIcon"
+        class="hide-links-btn"
+        (click)="HideNavLinks()"
+      ></fa-icon>
+      <li><a href="" class="link">Home</a></li>
+      <li><a href="about" class="link">About</a></li>
+      <li><a href="projects" class="link">Projects</a></li>
+      <li><a href="contact" class="link">Contact Us</a></li>
+    </ul>
+    <fa-icon
+      [icon]="barsIcon"
+      class="show-links-btn"
+      (click)="ShowNavLinks()"
+    ></fa-icon>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+  <!-- Switch Button -->
+  <button class="switch-btn" (click)="ChangeBackground()">
+    <fa-icon [icon]="switchIcon"></fa-icon>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <hr />
+    <h3>About Us</h3>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+      Impedit quidem repellendus cumque nostrum, eius quis voluptatibus veniam
+      minus adipisci fugit totam repellat dolorum.
+    </p>
+
+    <div class="social-icons">
+      <a href="#"><fa-icon [icon]="facebookIcon"></fa-icon></a>
+      <a href="#"><fa-icon [icon]="twitterIcon"></fa-icon></a>
+      <a href="#"><fa-icon [icon]="instagramIcon"></fa-icon></a>
+      <a href="#"><fa-icon [icon]="githubIcon"></fa-icon></a>
+      <a href="#"><fa-icon [icon]="linkedinIcon"></fa-icon></a>
+      <a href="#"><fa-icon [icon]="googleIcon"></fa-icon></a>
+    </div>
+
+    <h4 class="author">
+      Made with <fa-icon [icon]="heartIcon" style="color: red"></fa-icon> by
+      Lucas Glonti!
+    </h4>
+  </footer>
+</main>
