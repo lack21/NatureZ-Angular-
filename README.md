@@ -1,5 +1,7 @@
 # NatureZ
 
+![Screenshot 2023-02-17 031628](https://user-images.githubusercontent.com/100687592/219509565-b1162c1c-69d6-4337-9229-9c7704fe5d2f.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
 ## Development server
